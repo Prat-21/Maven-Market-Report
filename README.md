@@ -45,3 +45,9 @@ Now that I had established my table relationships, I began writing DAX functions
 
                                       Last Month Transactions = CALCULATE([Total Transactions],
                                                  DATEADD('Calendar'[date],-1,MONTH))
+
+**2**. **ALL**(): This function was used in conjunction with the CALCULATE function to assist with the calculation of Returns, Profits, Revenue and Transactions by overriding all filter context.
+
+                                      All Returns = CALCULATE([Total Returns], ALL(Return_Data))
+
+                                      
