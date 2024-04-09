@@ -41,13 +41,25 @@ After ensuring my data’s accuracy and consistency, I began the process of crea
 
 Now that I had established my table relationships, I began writing DAX functions to create measures. These were used to calculate my KPI’s and other metrics which would later be placed inside my visuals. Some of the functions I used include:
 
-**1**. **CALCULATE**():  This function was essential in the calculation of metrics such as those dealing with Returns, Profits, Revenue and Transactions.
+**1**.**CALCULATE**():  This function was essential in the calculation of metrics such as those dealing with Returns, Profits, Revenue and Transactions.
 
                                       Last Month Transactions = CALCULATE([Total Transactions],
                                                  DATEADD('Calendar'[date],-1,MONTH))
 
-**2**. **ALL**(): This function was used in conjunction with the CALCULATE function to assist with the calculation of Returns, Profits, Revenue and Transactions by overriding all filter context.
+**2**.**ALL**(): This function was used in conjunction with the CALCULATE function to assist with the calculation of Returns, Profits, Revenue and Transactions by overriding all filter context.
 
                                       All Returns = CALCULATE([Total Returns], ALL(Return_Data))
 
-                                      
+ **3**. **DATESINPERIOD**(): It was used to create a 60-Day Revenue measure by using the CALCULATE function to take the Total Revenue from the last 60 days by specifying the DATESINPERIOD to use the Date column and further utilize the MAX function on that same column, adding our interval of -60, and then specifying type as DAY.
+
+                                      60-Day Revenue = CALCULATE([Total Revenue],
+                                             DATESINPERIOD('Calendar'[date], MAX('Calendar'[date]),-60,DAY))
+
+**4**.**SUM/SUMX**(): Both SUM and SUMX were used in the report. The iterator function SUMX was used to calculate the 'Total Cost' by multiplying the Quantity column from the Transactions table with the Product Cost Column in the Product Lookup table through the use of the RELATED() function
+
+                                      Total Cost = SUMX(Transaction_Data, Transaction_Data[quantity] * RELATED(Products[product_cost]))
+
+**5**.**COUNTROWS/DISTINCTCOUNT**: This function was used to calculate the measure 'Total Returns' by counting the number of rows in the Returns Data table.
+
+                                      Total Returns = COUNTROWS(Return_Data)
+
