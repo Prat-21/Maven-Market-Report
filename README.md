@@ -15,7 +15,7 @@ For this project, I used Power BI to clean, analyze and visualize a data set fro
 
 In this dashboard analysis, I will review the insights I gained while creating the report. This project was a bonus project from the Power BI Desktop For Business Intelligence Course from Maven Analytics.
 
-## Dataset
+## Data Cleaning
 
 The raw data came in the from of CSV files which were then brought into Power BI using Get Data. The data was then transformed and cleaned into a more workable set. This process was repeated for each table/CSV file.
 
@@ -24,7 +24,24 @@ The cleaning process for this dataset was fairly straightforward requiring mainl
 
 
 ![Screenshot (16)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/7b7bd62c-7ad4-4a4b-90b3-fdfe66dda813)
-                                       completed table list
 
 
 
+## Data Modeling
+
+After ensuring my data’s accuracy and consistency, I began the process of creating a data model for my tables. I connected 'Stores' and 'Regions' as a snowflake schema. Both the fact tables i.e. 'Transaction Data' and 'Return Data' were placed at the bottom and the dimension tables above them. This was done to achieve ease of viewing cardinality and cross filter direction.
+
+
+
+![Screenshot (17)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/1a0d1635-3fb3-4826-a72b-74116ac067d0)
+
+
+
+## DAX Functions
+
+Now that I had established my table relationships, I began writing DAX functions to create measures. These were used to calculate my KPI’s and other metrics which would later be placed inside my visuals. Some of the functions I used include:
+
+**1**. **CALCULATE**():  This function was essential in the calculation of metrics such as those dealing with Returns, Profits, Revenue and Transactions.
+
+                                      Last Month Transactions = CALCULATE([Total Transactions],
+                                                 DATEADD('Calendar'[date],-1,MONTH))
