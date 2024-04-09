@@ -11,7 +11,7 @@
 
 ## Maven Market Project
 
-For this project, I used Power BI to clean, analyze and visualize a data set from Maven Analytics called Maven Market. Maven Market is a business which owns a variety of grocery stores of differing sizes across multiple countries including the United States, Canada and Mexico.
+For this project, I used Power BI to clean, analyze and visualize a data set from Maven Analytics called Maven Market. Maven Market is a business which owns grocery stores in USA, Canada and Mexico.
 
 In this dashboard analysis, I will review the insights I gained while creating the report. This project was a bonus project from the Power BI Desktop For Business Intelligence Course from Maven Analytics.
 
@@ -63,3 +63,12 @@ Now that I had established my table relationships, I began writing DAX functions
 
                                       Total Returns = COUNTROWS(Return_Data)
 
+## Creating Visuals
+
+For the report, I began by creating some KPI cards to display at the top of the report. These include Total Transactions, Total Profit, and Total Orders. Additionally, I included new measures for each of these indicators to calculate the previous month’s values and used it as a goal for the current month.
+
+The report required a visual to demonstrate profit, transactions and returns as well as other indicators to give us a better understanding of business health. A matrix was added with these metrics broken down by product brand was added into the report and data bars and gradients were implemented for greater ease of understanding. Return Rate was set to High is Bad while the others remained in their default setting.
+
+Since maven market has stores in USA, Canada and Mexico, it was necessary to include a Map visual showing the number of transactions broken down by city, region, and country. A slicer was provided to show the data by country with a select all option added.
+
+To conclude the report, I decided to add two visuals for revenue. The first visual was a column chart which shows the weekly trending revenue for Maven Market based on the start of week and Total Revenue. The second visual was a gauge chart showing Maven Market’s current month’s revenue with a target. For this target, I wrote a new measure called "Revenue target' which adds 5% to the previous month’s revenue.
