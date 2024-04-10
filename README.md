@@ -85,10 +85,10 @@ The US and Mexico both seem to have fairly steady transactions, profits, profit 
 
 
 
-![Screenshot (18)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/73992387-07d2-4a36-a9b4-fe35573452aa)
-canada performane filtered by total transactions
+![Screenshot (18)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/73992387-07d2-4a36-a9b4-fe35573452aa) canada performane filtered by total transactions
 
 
 
-![Screenshot (19)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/5882438e-119c-43ba-aae9-a8c3ae062dc2)
-canada performance filtered by return rate
+![Screenshot (19)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/5882438e-119c-43ba-aae9-a8c3ae062dc2) canada performance filtered by return rate
+
+
