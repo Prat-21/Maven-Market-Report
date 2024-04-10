@@ -72,3 +72,21 @@ The report required a visual to demonstrate profit, transactions and returns as 
 Since maven market has stores in USA, Canada and Mexico, it was necessary to include a Map visual showing the number of transactions broken down by city, region, and country. A slicer was provided to show the data by country with a select all option added.
 
 To conclude the report, I decided to add two visuals for revenue. The first visual was a column chart which shows the weekly trending revenue for Maven Market based on the start of week and Total Revenue. The second visual was a gauge chart showing Maven Market’s current month’s revenue with a target. For this target, I wrote a new measure called "Revenue target' which adds 5% to the previous month’s revenue.
+
+## Insight Analysis
+
+From an executive perspective, we can first begin by examining the KPI cards listed at the top each showing a specific metric based on the current month. As a reminder, each of these cards have their own goal for the current month, which is the metric from the previous month.
+
+The first card i.e. 'Current Month Transactions' shows that we have surpassed our target for the month by 5.69% or approximately 1,000 transactions. The next card i.e. 'Current Month Profit' shows that we have exceeded our previous month’s profit by 5.6% or approximately $4,000. And at last, we have 'Current Month Returns' KPI card which shows that we have exceeded our goal for returns, which is not a good sign and therefore, the values are labeled in red. We will further evaluate these cards later on in the analysis. Overall, Maven Market appears to be in a good health but, there are clearly areas for improvement.
+
+Using the matrix, I found the top 3 brands with the highest tranactions which are Hermanos (5,342), Ebony (5,238) and Tell Tale (5,112). All 3 have relatively good profit margins of nearly 59 percent.
+
+The US and Mexico both seem to have fairly steady transactions, profits, profit margins and low return rates. However, when we look at the performance of the stores in Canada, the data is telling a much different story there. Total transactions in Canada (10,043) are much lower compared to the US (58,494) and Mexico (45,203). Canada’s Total Profit (40,634) is also substantially lower than the US (2,29,642) and Mexico (1,79,998). Profit Margin remains almost same among the 3 countries. Canada’s Return Rate is also the highest among all 3 countries.
+
+
+
+![Screenshot (18)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/73992387-07d2-4a36-a9b4-fe35573452aa)
+
+
+
+![Screenshot (19)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/5882438e-119c-43ba-aae9-a8c3ae062dc2)
