@@ -93,3 +93,16 @@ The US and Mexico both seem to have fairly steady transactions, profits, profit 
 
 
 
+So, what could explain the low transactions for Canada in comparison to that of other two countries? If you see the map, you can see Maven Market only has presence in 2 cities within Canada, while the US and Mexico have more than 10 cities with stores in each one of them, offering a potential explanation to the difference in performance. Examining the KPI metrics of the Canadian stores, you will see that they are failing to meet their current month’s Transactions and Profit by almost half, and have already reached their max Returns for the month. Compare this to the US and Mexico stores who are more than meeting their goals.
+
+
+
+![Screenshot (19)](https://github.com/Prat-21/Maven-Market-Report/assets/165648053/b923b359-e5a1-42be-bd19-3d646532e177)
+
+
+
+## Conclusion
+
+Analyzing Maven Market’s operations across the United States, Mexico, and Canada has provided invaluable insights into the company’s performance and potential areas for improvement. Through meticulous examination, it became evident that the Canadian market is facing significant challenges with low sales, low profit and alarmingly high return rate. As a solution, the strategic decision to close the two underperforming stores in Canada emerge as a practical course of action to optimize resources and refocus efforts on more promising markets.
+
+This bonus project from the Power BI Desktop for Business Intelligence course, courtesy of Maven Analytics, has been a transformative experience, showcasing the power of data-driven decision-making. It has not only expanded my analytical skills but also deepened my understanding of business dynamics in a global context. The opportunity to work on this project has been immensely rewarding, reaffirming my passion for data analysis and its potential to drive meaningful change. I am excited to continue leveraging data insights to make informed decisions in the ever-evolving business landscape.
